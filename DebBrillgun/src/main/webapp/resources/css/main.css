@@ -1,0 +1,91 @@
+body {
+   margin: 0;
+}
+
+h1{
+    font-family: Open Sans;
+    font-size: 50px;
+    margin: 0;
+}
+h3{
+    font-family: Open Sans;
+    font-size: 30px;
+    margin: 0;
+}
+
+h4{
+    font-family: Noto Sans KR;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+h5{
+    font-family: Noto Sans KR;
+    font-size: 12px;
+    margin: 0;
+}
+
+p{
+    font-family: Noto Sans KR;
+    font-weight: 700;
+    margin: 0;
+}
+header {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    margin:  0 auto;
+    box-shadow: 0 0 10px #8888;
+    position: fixed;
+    z-index: 1;
+}
+
+.main{
+    height: 660px;
+    background-size: 100% 100%;
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
+}
+#text{
+    width: 700px;
+    float: left;
+    margin-top: 200px;
+    margin-left: 10%;
+
+}
+#text2{
+    width: 400px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-right: 60%;
+}
+
+#btn{
+    font-family: Noto Sans KR;
+    font-weight: 400;
+    height: 40px;
+    width: 150px;
+    margin-top: 30px;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+.allprj{
+    margin: 50px 10% 100px 10%;
+}
+
+#prj{
+    background-image: url("https://helpx.adobe.com/content/dam/help/ko/photoshop/how-to/compositing/_jcr_content/main-pars/image/compositing_1408x792.jpg");
+    margin: 20px 0;
+    height: 300px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+#prjtext{
+    float: left;
+    width: 60%;
+    transform: translate(30px, 50%);
+}
