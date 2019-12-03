@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
+<!Doctype html>
 <html>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
@@ -15,18 +16,19 @@
 </head>
 <body>
 	<header>
-		<nav class='animated flipInX'>
-			<li class='sub-menu'><a href='#'><img id="menu" src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-128.png">
-			<i class='fa fa-angle-down'></i>
-			</a>
+			<img class='menu'src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-128.png">
+			<a href='/home'><p id="title">DevBrillgun</p></a> 
+			<a href='/login'> <img id="login" src="https://cdn1.iconfinder.com/data/icons/essentials-pack/96/login_enter_sign_in_input_access-128.png"></a>
+				<nav class='animated flipInX'>
+				<li class='sub-menu'> 
 				<ul>
-					<li><a href='#'> Product Item </a></li>
-					<li><a href='#'> Product Item </a></li>
-					<li><a href='#'> Product Item </a></li>
-				</ul></li>
-			<a href=#><p id="title">DevBrillgun</p></a> <a href=#> <img
-				id="login"
-				src="https://cdn1.iconfinder.com/data/icons/essentials-pack/96/login_enter_sign_in_input_access-128.png"></a>
+					<li><a href='/about'> About </a></li>
+					<li><a href='/project'> Project </a></li>
+					<li><a href='/blog' target="_blank"> Blog </a></li>
+					<li><a href='/faq'> Faq </a></li>
+				</ul>
+			</li>
+		</nav>	
 	</header>
 	<article class="main">
 		<div id="text">
@@ -39,7 +41,7 @@
 				다양한 개발 프로젝트 경험을 바탕으로 더 나은 웹서비스를 고객에게 경험시키기 위해 노력하고 있습니다.<br>
 				소통은 언제나 환영입니다.
 			</p>
-			<button type="button" id=btn onclick="location.href='join.jsp'">더
+			<button type="button" id=btn onclick="location.href='/about'">더
 				알아보기</button>
 		</div>
 	</article>
@@ -70,16 +72,20 @@
 
 		<div class="footer-right">
 
-			<a href="#" class="fa-facebook"></a> <a href="#" class="fa-insta"></a>
-			<a href="#" class="fa-phone"></a> <a href="#" class="fa-github"></a>
+			<a href="#" class="fa-facebook" target="_blank" ></a> 
+			<a href="#" class="fa-insta" target="_blank"></a>
+			<a href="#" class="fa-phone" target="_blank"></a> 
+			<a href="#" class="fa-github" target="_blank"></a>
 
 		</div>
 
 		<div class="footer-left">
 
 			<p class="footer-links">
-				<a href="#">About</a> <a href="#">Project</a> <a href="#">Blog</a> <a
-					href="#">Faq</a>
+				<a href="/about">About</a> 
+				<a href="/project">Project</a> 
+				<a href="/blog" target="_blank">Blog</a> 
+				<a href="/faq">Faq</a>
 
 			</p>
 			<p>Brilliant Gun &copy; 2019</p>

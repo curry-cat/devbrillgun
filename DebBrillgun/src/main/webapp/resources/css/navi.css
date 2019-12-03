@@ -1,8 +1,9 @@
-#menu {
+.menu {
     width: 30px;
     margin: 10px 10%;
     display: block;
     float: left;
+
 }
 
 #login {
