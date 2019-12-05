@@ -1,5 +1,7 @@
 package com.myp.controller;
 
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
+
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -27,22 +29,44 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
-		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		String formattedDate = dateFormat.format(date);
-		model.addAttribute("serverTime", formattedDate );
+//		logger.info("Welcome home! The client locale is {}.", locale);
+//		
+//		Date date = new Date();
+//		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+//		String formattedDate = dateFormat.format(date);
+//		model.addAttribute("serverTime", formattedDate );
 		
 		return "home";
 	}
 	
-	@RequestMapping(value="/blog", method = RequestMethod.GET)
-	public String Blog(HttpServletRequest http, HttpServletResponse httr) throws Exception {
+	@RequestMapping(value="/login")
+	public String login(HttpServletRequest http, HttpServletResponse httr) throws Exception {
 		
-		System.out.println("blog");
-		final String blogUrl = "redirect:http://www.yellwohills.tv";
+		return "login";
+	}
+
+	@RequestMapping(value="/blog")
+	public String blog(HttpServletRequest http, HttpServletResponse httr) throws Exception {
+		
+		final String blogUrl = "redirect:http://www.yellowhills.tv";
 		return blogUrl;
 	}
 	
+	@RequestMapping(value="/about")
+	public String about(HttpServletRequest http, HttpServletResponse httr) throws Exception {
+		
+		return "about";
+	}
+	
+	@RequestMapping(value="/project")
+	public String project(HttpServletRequest http, HttpServletResponse httr) throws Exception {
+		
+		return "project";
+	}
+
+	@RequestMapping(value="/contact")
+	public String contact(HttpServletRequest http, HttpServletResponse httr) throws Exception {
+		
+		return "contact";
+	}
 }
