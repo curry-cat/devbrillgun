@@ -43,7 +43,7 @@ ul li:last-child {
 
 }
 
-#login {
+.login {
     width: 25px;
     margin: 10px 10%;
     display: block;

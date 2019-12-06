@@ -54,5 +54,5 @@
 	<%@ include file="footer.jsp" %>
 </body>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src="<%=request.getContextPath() %>/resources/js/index.js"></script>
+	<script src="<%=request.getContextPath() %>/resources/js/index.js?ver=1"></script>
 </html>
